@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* to prevent the borders of elements affected by another borredrs and elements */
+}
+.container{
+    position: relative;
+    max-width: 94rem;  /* this enable the container responsive to width change*/
+    padding: 0 5rem;    /* space between the container and the navigation*/
+    margin: 0 auto;    /* external spacing*/
+   
+
+}
+.logo{
+    color: rgb(221, 207, 9);
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'poppins' sans-serif;
+    transition: .3s ease-in-out;
+}
+.logo:hover{
+    font-weight: 900;
+    transform-style: preserve-3d;
+    transform: scale(1.2);
+}
+nav{
+    width: 100%;
+    position: relative;
+}
+.header{
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+    
+}
+body{
+    background-color: rgb(238, 232, 232)
+}
+
+a{
+    text-decoration: none;
+    font-family: 'poppins' sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+   position: relative;
+   top: 2rem;
+
+}
+.navigation ul{
+    display: flex;
+  
+}
+.navigation a{
+    color: rgb(221, 207, 9);
+    display: inline-block;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.navigation a:hover,a.active{
+    color: #fff;
+    border: 1px solid rgb(221, 207, 9);
+}
+h1{
+    font-weight: 300;
+    font-family: fantasy;
+    margin-top: 2em;
+}
+
+img{
+    max-width: 100%;
+    width: 250px;
+    height: 300px;
+   
+   
+}
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6rem;
+}
+.image1{
+    display: block;
+    position: relative;
+    margin-top: 3em;
+    box-shadow: 0 0 20px 2px rgb(40,40,40,);
+    transition: 1s ease-in-out;
+   
+}
+.image1:hover{
+    transform: translateY(20px);
+}
+.image1:before{
+    content:"";
+    position: absolute;
+    display: block; width: inherit;
+    
+    z-index: 2;
+    transition: .3s;
+    opacity: 0;
+}
+.image1:hover::before{
+    opacity: 1; 
+}
+
+.image2{
+    display: block;
+    position: relative;
+    margin-top: 3em;
+    box-shadow: 0 0 20px 2px rgb(40,40,40,);
+    transition: 1s ease-in-out;
+}
+.image2:hover{
+    transform: translateX(20px);
+}
+.image2:before{
+    content:"";
+    position: absolute;
+    display: block; width: inherit;
+    z-index: 3;
+    transition: .3s;
+    opacity: 0;
+}
+.image2:hover::before{
+    opacity: 1; 
+}
+.image3{
+    display: block;
+    position: relative;
+    top: 3em;
+    box-shadow: 0 0 20px 2px rgb(40,40,40,);
+    transition: 1s ease-in-out;
+   
+}
+.image3:hover{
+    transform: translateY(20px);
+}
+.image3:before{
+    content:"";
+    position: absolute;
+    display: block; width: inherit;
+    z-index: 2;
+    transition: .3s;
+    opacity: 0;
+}
+.image3:hover::before{
+    opacity: 1; 
+}
+
+
+.links img{
+    width: 30px;
+    height: 30px;
+    margin-left: 6em;
+    margin-top: 5em;
+   
+}
+.footer{
+    background-color: #000;
+}
+.footer .links{
+    display: flex;
+    
+}
+.links p{
+    color: rgb(221, 207, 9);
+    display: block;
+    margin-top: 5em;
+    margin-left: 1em;
+    
+}
+
+@media screen and (max-width:900px) {
+    h1{
+        display: none;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 4em;
+    }
+    
+}
+.button{
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+    float: right;
+    
+}
+.checker{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .footer{
+        margin: 0;
+    }
+    .social{
+        margin: 0;
+
+    }
+    .btton{
+        margin-top: 1em;
+        margin-right: 35em; 
+     }
+    ul{
+        position: fixed;
+        left: 0em;
+        top: 2em;
+        width: 25%;
+        margin-top: 4em;
+        display: flex;
+        flex-direction: column;
+        background-color: #000000ab;
+        z-index: 100;
+    }
+    ul li {
+        padding: 2em;
+        width: 27vw;
+        font-size: 15px;
+    
+    } 
+   h1{
+       font-size: 20px;
+   }
+   .images{
+       margin-bottom: 2em;
+   }
+   
+    
+} 

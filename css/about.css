@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+    list-style: none;
+}.main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 500px 60px;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-area: 
+    "header header header"
+    "image text"
+    "footer footer footer";
+}
+.header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #000;
+    
+
+}
+.image{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+.text{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  
+}
+.footer{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    background-color: rgb(238, 232, 232);
+}
+.container{
+    position: relative;
+    max-width: 94rem; 
+    padding: 0 5rem;   
+    margin: 0 auto;    
+}
+.logo{
+    color: rgb(221, 207, 9);
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'dancing script' sans-serif;
+    transition: .3s ease-in-out;
+    rotate: 360deg;
+}
+.logo:hover{
+    transform-style: preserve-3d;
+    transform: scale(1.2);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+   position: relative;
+   top: 2rem;
+   font-family: 'dancing script' sans-serif;
+
+}
+
+.navigation ul{
+    display: flex;
+}
+.navigation a{
+    color:rgb(221, 207, 9);
+    padding: 0 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.navigation a:hover ,a.active{
+     color: #fff; 
+    border: 1px solid rgb(221, 207, 9);
+}
+.text p{
+    font-size: 20px;
+    font-family: 'dancing script' cursive;
+}
+.section .text{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+#pic{
+    width: 250px;
+    height: 300px;
+    margin-left: 5em;
+    margin-top: 4em;
+
+ }  
+ h1{
+     position: relative;
+     bottom: .5em;
+ }
+.text{
+    color: #000;
+    margin-right: 10em; 
+    margin-top: 15em;  
+}
+
+
+.footer .links{
+    display: flex;
+    margin-left: 6em;
+}
+.links img{
+    width: 30px;
+    height: 30px;
+    margin-left: 4em;
+}
+.links p{
+    color: rgb(221, 207, 9);
+    margin-left: 4em;
+    
+}
+.links{
+    display: flex;
+    margin-top: 4em;
+
+}
+.footer{
+    /* position: relative; */
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+   
+}
+@media screen and (max-width:935px){
+   h1{
+       margin-top: 3em;
+   }
+   #pic{
+       margin-left: 3em;
+   }
+    .main{
+        grid-template-rows: 100px 1fr 1fr 100px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "image"
+        "text"
+        "footer";
+    }
+    .header{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .image{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .text{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .footer{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+   .text{
+       position: relative;
+       bottom: 18em;
+       left: 15em;
+   }
+   .navigation{
+       font-size: 14px;
+   }
+   .logo{
+       font-size: 20px;
+       position: relative;
+       bottom: 1em;
+       right: 2em;
+   }
+   
+}
+.btton{
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+    float: right;
+    
+}
+.checker{
+    display: none;
+}
+@media screen and (max-width:768px) {
+      .btton{
+        margin-top: 1em;
+        margin-right: 35em;
+     }
+    ul{
+        position: fixed;
+        left: 0em;
+        top: 3em;
+        width: 25%;
+        margin-top: 4em;
+        display: flex;
+        flex-direction: column;
+        background-color: #000000ab;
+        z-index: 100;
+    }
+    ul li {
+        padding: 2em;
+        
+        width: 27vw;
+        font-size: 15px;
+    
+    } 
+    .footeer{
+        padding: 0;
+        margin: 0;
+    }
+    .navigation{
+        padding: 0;
+        margin: 0;
+    }
+   
+    
+} 

@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+    max-width: 94rem;  
+    padding: 2rem 5rem;    
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   
+}
+.logo{
+     color: rgb(221, 207, 9);
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'poppins' sans-se rif;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+   
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+header{
+    background-color: #000;
+    width: 100%;
+}
+body{
+    background-color: rgb(238, 232, 232)
+}
+.navigation ul{
+    display: flex;
+  
+}
+.navigation a{
+    color: rgb(221, 207, 9);
+    display: inline-block;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.navigation a:hover,a.active{
+    color: #fff;
+    border: 1px solid rgb(221, 207, 9);
+}
+
+.skills{
+    text-align: right;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: rgb(11, 24, 20);
+}
+.myskill{
+    margin-top: 6%;
+    margin-left: 20%;
+}
+#top{
+    font-family: "poppins" sans-serif;
+    font-weight: 400;
+    margin-left: 20%;
+}
+.html{
+    width: 80%;
+    background-color: rgba(211, 81, 81, 0.514);
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+.html:hover{
+    transform: scale(1.2);
+}
+.css{
+    width: 75%;
+    background-color: chartreuse;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+.css:hover{
+    transform: scale(1.2);
+}
+.python{
+    width: 65%;
+    background-color: rgba(95, 95, 238, 0.705);
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+.python:hover{
+    transform: scale(1.2);
+}
+.js{
+    width: 60%;
+    background-color: rgba(134, 98, 21, 0.562);
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+.js:hover{
+    transform: scale(1.2);
+}
+.links img{
+    width: 30px;
+    height: 30px;
+    margin-left: 6em;
+    margin-top: 4em;
+}
+.links p{
+    margin-left: 8em;
+    color: rgb(221, 207, 9);
+    margin-top: 4em;
+}
+.links{
+    display: flex;
+    margin-top: 8em;
+
+}
+.footer{
+    margin-top: 20em;
+    width: 100%; 
+    height: 100px;
+    background-color: #000;
+   
+}
+.button{
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+    float: right;
+    
+}
+.checker{
+    display: none;
+}
+ @media screen and (max-width:768px) {
+  .footer{
+      position: fixed;
+      height: 20%;
+      width: 100%;
+  }
+    h1{
+      position: fixed;
+      bottom: 2em;
+      left: 8em;
+      display: none;
+  }
+    .skills , p{
+       position: relative;
+       margin-left: 15em;
+       margin-top: -.6em;
+    }
+    
+    .button{
+        margin-top: 1em;
+        margin-right: 35em;
+     }
+    ul{
+        position: fixed;
+        left: 0em;
+        top: 2em;
+        width: 25%;
+        margin-top: 4em;
+        display: flex;
+        flex-direction: column;
+        background-color: #000000ab;
+        z-index: 100;
+    }
+    ul li {
+        padding: 1em;
+        width: 27vw;
+        font-size: 15px;
+    
+    } 
+    #myskill li{
+        padding: -1em;
+    }
+}
